@@ -15,8 +15,6 @@ const animated = () => {
   })
 }
 
-animated()
-
 const accardion = () => {
   const activeItemCls = 'matters-item--active'
   const activeContentCls = 'matters-content--active'
@@ -41,8 +39,6 @@ const accardion = () => {
     })
   })
 }
-
-accardion()
 
 const toggleModal = () => {
   const activeCls = 'modal--active'
@@ -87,8 +83,6 @@ const toggleModal = () => {
   })
 }
 
-toggleModal()
-
 const toggleMenu = () => {
   const activeCls = 'navbar--active'
   const navbar = document.querySelector('#navbar')
@@ -106,3 +100,6 @@ const toggleMenu = () => {
 }
 
 toggleMenu()
+toggleModal()
+accardion()
+animated()
