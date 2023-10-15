@@ -1,0 +1,80 @@
+@media (max-width: 1180px) {
+  .matters {
+    &-item {
+      font-size: 22px;
+      padding: 0 40px;
+    }
+
+    &-items {
+      overflow: hidden;
+    }
+
+    .item {
+      &-icon {
+        width: 19px;
+      }
+    }
+
+    &-contents {
+      padding: 20px 30px;
+    }
+
+    &-content .text {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .matters {
+    padding: 30px 0;
+
+    &-row {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    &-item {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .matters {
+    &-row {
+      gap: 20px;
+    }
+
+    &-item {
+      font-size: 18px;
+      padding: 0 0 0 40px;
+    }
+
+    &-contents {
+      padding: 20px;
+    }
+
+    &-items {
+      margin-top: 0;
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .matters {
+    &-item {
+      font-size: 16px;
+      padding: 0 0 0 25px;
+    }
+    
+    .item {
+      &-icon {
+        width: 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.questions {
+  padding: 80px 0 60px;
+  background-color: #ebf0f3;
+
+  &-row {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    gap: 0 120px;
+  }
+
+  &-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'title title' 'input-text input-email' 'textarea textarea' 'row row';
+    gap: 25px;
+
+    .form {
+      &-input,
+      &-textarea {
+        padding: 15px 20px;
+        border: 1px solid #008ed3;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+
+      &-input {
+        &[type='text'] {
+          grid-area: input-text;
+        }
+
+        &[type='email'] {
+          grid-area: input-email;
+        }
+      }
+
+      &-textarea {
+        grid-area: textarea;
+        height: 200px;
+      }
+
+      &-row {
+        margin-top: 20px;
+        display: flex;
+        grid-area: row;
+        align-items: center;
+        gap: 30px;
+      }
+
+      &-link {
+        font-size: 20px;
+        color: #74bbe5;
+        border-bottom: 1.5px solid #74bbe5;
+        line-height: 0.9;
+      }
+    }
+
+    .title {
+      grid-area: title;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      width: max-content;
+    }
+  }
+
+  &-image {
+    max-width: 600px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

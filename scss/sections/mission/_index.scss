@@ -1,0 +1,27 @@
+.mission {
+  margin: 75px 0 100px;
+
+  &-row {
+    display: grid;
+    gap: 45px;
+    grid-template-columns: max-content 650px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-img {
+    justify-self: center;
+
+    img {
+      width: 550px;
+    }
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .text {
+    margin-bottom: 45px;
+  }
+}

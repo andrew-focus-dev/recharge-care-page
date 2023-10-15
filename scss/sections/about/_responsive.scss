@@ -1,0 +1,28 @@
+@media (max-width: 1140px) {
+  .about {
+    &-row {
+      grid-template-columns: 300px 1fr;
+      gap: 0 30px;
+    }
+
+    .text {
+      font-size: 19px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 30px 0;
+
+    &-row {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'title' 'text' 'link';
+    }
+
+    .title {
+      margin-bottom: 15px;
+    }
+  }
+}

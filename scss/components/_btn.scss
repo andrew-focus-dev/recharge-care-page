@@ -1,0 +1,21 @@
+.btn {
+  padding: 10px 30px;
+  display: block;
+  font-size: 17px;
+  color: #fff;
+  background-color: #7ab4e1;
+  border-radius: 6px;
+  transition: box-shadow 0.6s, color 0.6s, background-color 0.6s;
+
+  &.btn-large {
+    padding: 13px 30px;
+    font-size: 19px;
+  }
+
+  &:hover {
+    color: #7ab4e1;
+    background-color: #fff;
+    transition: box-shadow 0.6s, color 0.6s, background-color 0.6s;
+    box-shadow: 0px 0px 39px -13px #7ab4e1;
+  }
+}

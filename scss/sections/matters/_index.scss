@@ -1,0 +1,112 @@
+.matters {
+  background-color: #c8e6f5;
+  background-image: url('../img/matters-bg.png');
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: right 10% bottom;
+  padding: 80px 0;
+
+  &-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &-items {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 25px;
+  }
+
+  &-item {
+    color: #fff;
+    font-size: 28px;
+    position: relative;
+    padding: 0 65px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    transition: color 0.4s;
+
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 15px 25px 15px;
+      border-color: transparent transparent #fff transparent;
+      position: absolute;
+      right: -10px;
+      transform: rotate(30deg);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    &.matters-item--active {
+      color: #68b6e3;
+
+      .item-icon__minus {
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+
+      .item-icon__plus {
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      &:before {
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: #68b6e3;
+      transition: color 0.4s;
+      transition: opacity 0.3s;
+    }
+
+    .item-icon__minus {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .item-icon__plus {
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+
+    .item-icon {
+      width: 25px;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &-contents {
+    background-color: #fff;
+    padding: 35px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-content {
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    z-index: -1;
+
+    .text {
+      font-size: 22px;
+    }
+
+    &--active {
+      opacity: 1;
+      transition: opacity 1s;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

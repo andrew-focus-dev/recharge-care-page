@@ -1,0 +1,27 @@
+@import '../fonts/index';
+@import './utils/reset';
+@import './utils/variable';
+@import './utils/mixins';
+@import './components/index';
+@import './vendors/index';
+
+* {
+  font-family: 'Jost', sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: $container + px;
+  margin: 0 auto;
+  width: 96%;
+}
+
+main {
+  overflow: hidden;
+}
+
+@import './layout/index';
+@import './sections/index';

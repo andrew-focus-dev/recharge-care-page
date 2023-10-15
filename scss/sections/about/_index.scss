@@ -1,0 +1,24 @@
+.about {
+  background-color: #ebf0f3;
+  padding: 60px 0 60px;
+
+  &-row {
+    display: grid;
+    grid-template-columns: 0.32fr 1fr;
+    grid-template-areas: 'title text' '. link';
+  }
+
+  .link {
+    grid-area: link;
+  }
+
+  .text {
+    grid-area: text;
+    margin-bottom: 35px;
+    font-size: 22px;
+  }
+
+  .title {
+    grid-area: title;
+  }
+}

@@ -1,0 +1,21 @@
+.title {
+  position: relative;
+  color: #67b6e6;
+  font-size: 45px;
+  font-weight: 500;
+
+  .title-shadow {
+    position: absolute;
+    left: 0px;
+    top: -32px;
+    font-size: 76px;
+    opacity: 0.1;
+  }
+
+  &.title-small {
+    .title-shadow {
+      top: -15px;
+      font-size: 60px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@media (max-width: 1090px) {
+  .join {
+    padding: 30px 0;
+
+    &-text {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  .join {
+    padding: 15px 0;
+
+    &-text {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .join {
+    padding: 10px 0;
+
+    &-text {
+      font-size: 20px;
+    }
+  }
+}

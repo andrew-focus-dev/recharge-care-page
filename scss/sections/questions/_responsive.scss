@@ -1,0 +1,91 @@
+@media (max-width: 1450px) {
+  .questions {
+    &-row {
+      gap: 0 70px;
+    }
+
+    &-image {
+      max-width: 480px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .questions {
+    &-form {
+      .title {
+        margin-bottom: 0;
+        font-size: 35px;
+      }
+
+      .form {
+        &-input,
+        &-textarea {
+          padding: 10px 20px;
+        }
+      }
+    }
+
+    &-row {
+      gap: 0 50px;
+    }
+
+    &-image {
+      max-width: 370px;
+    }
+  }
+}
+
+@media (max-width: 1070px) {
+  .questions {
+    padding: 30px 0 40px;
+
+    &-row {
+      gap: 0;
+    }
+
+    &-image {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .questions {
+    &-form {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'title' 'input-text' 'input-email' 'textarea' 'row';
+
+      .form-row {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .questions-form {
+    gap: 20px;
+
+    .title {
+      font-size: 25px;
+    }
+
+    .form {
+      &-input,
+      &-textarea {
+        font-size: 17px;
+      }
+
+      &-row {
+        margin-top: 10px;
+      }
+
+      &-link {
+        font-size: 17px;
+      }
+    }
+  }
+}

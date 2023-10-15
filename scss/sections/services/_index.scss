@@ -1,0 +1,56 @@
+.services {
+  padding: 60px 0;
+
+  .title {
+    margin-bottom: 30px;
+  }
+
+  &-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    margin-bottom: 70px;
+  }
+
+  &-item {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 50px;
+
+    .item {
+      &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      &-image {
+        display: flex;
+        max-width: 400px;
+        margin-top: 10px;
+
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &-title {
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      &-text {
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 30px;
+        margin-bottom: 45px;
+      }
+    }
+
+    .btn {
+      width: max-content;
+    }
+  }
+}

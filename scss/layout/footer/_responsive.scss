@@ -1,0 +1,34 @@
+@media (max-width: 1040px) {
+  .footer {
+    .navbar {
+      gap: 0;
+
+      .btn {
+        display: block;
+        width: max-content;
+        position: unset;
+        justify-self: end;
+      }
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .footer {
+    padding: 20px 0;
+
+    .navbar {
+      margin-bottom: 20px;
+    }
+
+    &-text {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .footer-text {
+    font-size: 12px;
+  }
+}
