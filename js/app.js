@@ -100,6 +100,28 @@ const toggleMenu = () => {
   })
 }
 
+const dropDown = () => {
+  const activeCls = 'navbar-list--active'
+  const dropdown = document.querySelector('.navbar-list')
+
+  if (window.innerWidth <= 1040) {
+    dropdown.addEventListener('click', () => {
+      dropdown.classList.toggle(activeCls)
+    })
+
+    return
+  }
+
+  dropdown.addEventListener('mouseover', () => {
+    dropdown.classList.add(activeCls)
+  })
+
+  dropdown.addEventListener('mouseleave', () => {
+    dropdown.classList.remove(activeCls)
+  })
+}
+
+dropDown()
 toggleMenu()
 toggleModal()
 accardion()

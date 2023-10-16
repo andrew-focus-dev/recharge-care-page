@@ -99,7 +99,7 @@
 
   &-list {
     position: relative;
-    z-index: 15;
+    width: max-content;
 
     &__dropdown {
       position: absolute;
@@ -115,6 +115,8 @@
       opacity: 0;
       transition: 300ms;
       box-shadow: 0px 11px 41px -20px #7ab4e1;
+      z-index: 1;
+      border-bottom-right-radius: 10px;
 
       &:before {
         content: '';
@@ -124,6 +126,7 @@
         position: absolute;
         left: -30px;
         top: 0;
+        border-bottom-left-radius: 10px;
       }
 
       &:hover {
@@ -133,7 +136,7 @@
       }
     }
 
-    &:hover {
+    &--active {
       .navbar-list__dropdown {
         opacity: 1;
         pointer-events: all;
@@ -188,8 +191,8 @@
       top: 78px;
       background-color: #cee5f4;
       padding: 25px 15px 120px;
-      z-index: 1;
       border-top: 1px solid #7ab4e1;
+      gap: 15px;
     }
 
     .btn {
@@ -197,8 +200,7 @@
       position: absolute;
       left: 50%;
       transform: translate(-50%, 0);
-      top: 395px;
-      z-index: 1;
+      top: 330px;
     }
 
     &--active {
