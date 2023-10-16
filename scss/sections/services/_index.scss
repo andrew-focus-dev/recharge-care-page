@@ -17,6 +17,13 @@
     grid-template-columns: max-content 1fr;
     gap: 50px;
 
+    &:hover {
+      .item-image {
+        filter: blur(3px);
+        transition: 250ms;
+      }
+    }
+
     .item {
       &-content {
         display: flex;
@@ -28,6 +35,8 @@
         display: flex;
         max-width: 400px;
         margin-top: 10px;
+        filter: blur(0);
+        transition: 250ms;
 
         img {
           display: block;
