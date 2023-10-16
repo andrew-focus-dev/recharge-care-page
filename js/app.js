@@ -68,11 +68,12 @@ const toggleModal = () => {
         `[data-modal="${e.target.dataset.modalOpen}"]`
       )
 
-      document.body.style.overflow = 'hidden'
       window.scrollTo({
         top: 0,
-        behavior: 'smooth',
+        behavior: 'instant',
       })
+
+      document.body.style.overflow = 'hidden'
 
       modal.classList.remove(noneCls)
 
